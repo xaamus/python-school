@@ -1,20 +1,20 @@
-t1=input()
-t2=input()
-def porownanie(t1,t2):
-    t1_len = len(t1)
-    t2_len = len(t2)
-    if t1_len < t2_len:
-        n=len(t1)
-        wynik=0
+tx1=input('Podaj pierwszy tekst\n')
+tx2=input('Podaj drugi tekst\n')
+def porownanie(tx1,tx2):
+    tx1len = len(tx1)
+    tx2len = len(tx2)
+    if tx1len < tx2len:
+        n=len(tx1)
+        wyn=0
         for i in range(n):
-            if t1[i]!=t2[i]:
-                wynik+=1
-        return wynik
+            if tx1[i]!=tx2[i]:
+                wyn+=1
+        return wyn
     else:
-        n=len(t2)
-        wynik=0
+        n=len(tx2)
+        wyn=0
         for i in range(n):
-            if t1[i]!=t2[i]:
-                wynik+=1
-        return wynik
-print(porownanie(t1,t2))
+            if tx1[i]!=tx2[i]:
+                wyn+=1
+        return wyn
+print(porownanie(tx1,tx2))
